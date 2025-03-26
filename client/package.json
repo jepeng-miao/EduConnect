@@ -1,0 +1,25 @@
+{
+  "name": "educonnect-client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@excalidraw/excalidraw": "^0.18.0",
+    "@mui/icons-material": "^5.14.10",
+    "@mui/material": "^5.14.10",
+    "@vitejs/plugin-react": "^4.0.4",
+    "framer-motion": "^12.5.0",
+    "jsqr": "^1.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
+    "socket.io-client": "^4.7.2",
+    "vite": "^4.4.9"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}

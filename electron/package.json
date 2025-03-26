@@ -1,0 +1,39 @@
+{
+  "name": "educonnect-desktop",
+  "version": "1.0.0",
+  "description": "EduConnect桌面应用",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:win": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.educonnect.desktop",
+    "productName": "EduConnect",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "../server/**/*",
+      "../client/dist/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    }
+  },
+  "dependencies": {
+    "electron-is-dev": "^2.0.0"
+  },
+  "devDependencies": {
+    "electron": "^25.3.1",
+    "electron-builder": "^24.6.3"
+  }
+}

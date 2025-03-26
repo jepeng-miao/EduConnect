@@ -1,0 +1,36 @@
+.fullscreen-excalidraw {
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: white !important;
+  z-index: 9999 !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  overflow: hidden !important;
+}
+
+.fullscreen-excalidraw .excalidraw {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.fullscreen-excalidraw .excalidraw__canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* 确保全屏模式下工具栏和UI元素正常显示 */
+.fullscreen-excalidraw .excalidraw__main {
+  height: 100% !important;
+}
+
+/* 隐藏全屏模式下不需要的元素 */
+.fullscreen-excalidraw .excalidraw__footer-center {
+  display: none !important;
+}
